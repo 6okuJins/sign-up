@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="stylesheet" href="meyerReset.css">
+	<link rel="stylesheet" href="./meyerReset.css">
+	<link rel="stylesheet" href="./style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,23 +16,35 @@
             <div class="sign-in">Already have an account? <a href="google.com">Sign in</a></div>
         </div>
         <form action id="form-container">
-            <label for="first-name">First Name</label>
-            <input type="input" name="first-name" id="first-name" required>
+            <div class="float-container">
+				<label for="first-name">First Name</label>
+				<input type="input" name="first-name" id="first-name" required>
+			</div>
 			
-            <label for="last-name">Last Name</label>
-            <input type="input" name="last-name" id="last-name" required>
+            <div class="float-container">
+				<label for="last-name">Last Name</label>
+				<input type="input" name="last-name" id="last-name" required>
+			</div>
 
-            <label for="e-mail">E-mail</label>
-            <input type="email" name="e-mail" id="e-mail" required>
+            <div class="float-container">
+				<label for="e-mail">E-mail</label>
+				<input type="email" name="e-mail" id="e-mail" required>
+			</div>
 
-            <label for="phone">Phone Number</label>
-            <input type="tel" name="phone" id="phone" required>
+            <div class="float-container">
+				<label for="phone">Phone Number</label>
+				<input type="tel" name="phone" id="phone" required>
+			</div>
 
-            <label for="pass">Password</label>
-            <input type="password" name="pass" id="pass" required>
+            <div class="float-container">
+				<label for="pass">Password</label>
+				<input type="password" name="pass" id="pass" required>
+			</div>
 
-            <label for="confirm-pass">Confirm Password</label>
-            <input type="password" name="confirm-pass" id="confirm-pass" required>
+            <float-container>
+				<label for="confirm-pass">Confirm Password</label>
+				<input type="password" name="confirm-pass" id="confirm-pass" required>
+			</float-container>
         </form>
     </div>
 </body>
