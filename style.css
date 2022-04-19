@@ -6,6 +6,11 @@
     display:flex;
     flex-flow:column nowrap;
 }
-form label {
+.float-container label {
     position: absolute;
+    font-size: 0.75em;
+    padding: 2px;
+}
+.float-container input {
+    height: 2.75em
 }
