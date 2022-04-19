@@ -1,6 +1,6 @@
-.container {
+.sub-container {
     height: auto;
-    max-width: 60rem;
+    max-width: 40rem;
     border: 2px solid black;
 
     display:flex;
