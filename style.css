@@ -7,11 +7,22 @@
     flex-flow:column nowrap;
     align-items: center;
 }
+#form-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2em;
+    row-gap: 1em;
+}
 .float-container label {
     position: absolute;
     font-size: 0.75em;
     padding: 2px;
 }
 .float-container input {
-    height: 2.75em
+    height: 2.75em;
+    width: 100%;
+}
+.float-container.big-field {
+    grid-column: 1 / 3;
+    background-color: aqua;
 }
