@@ -1,8 +1,21 @@
+@font-face {
+    font-family: Valorant;
+    src: url(Assets/Valorant\ Font.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(Assets/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: DMSans;
+    src: url(Assets/DMSans-Bold.ttf);
+}
 body {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: black;
 }
 .main-container {
     background-image: url(Assets/background.jpg);
@@ -26,11 +39,13 @@ body {
     left: 0px;
     bottom: 20px;
 }
+
+/* FORMS */
 .sub-container {
     z-index: 1;
     height: auto;
     min-width: 20rem;
-    border: 2px solid black;
+    border-radius: 20px;
     margin: 3rem 2% 3rem 2%;
     padding: 3rem;
 
@@ -39,7 +54,10 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+
+    background: linear-gradient(rgba(220, 61, 75, 0.5), rgba(4, 46, 39, 0));
 }
+/* FORMS BOTTOM HALF */
 #form-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -49,16 +67,65 @@ body {
 .float-container label {
     position: absolute;
     font-size: 0.75em;
-    padding: 2px;
+    padding: 5px;
     white-space: nowrap;
+    font-family: DMSans;
+    color: #dc3d4b;
+
 }
 .float-container input {
     height: 2.75em;
     width: 100%;
+    background-color: #364966;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 0.35em;
+    font-family: DMSans;
+    font-size: 20px;
+    color: white;
 }
 .float-container.big-field {
     grid-column: 1 / 3;
 }
 button[type="submit"] {
-    grid-column: 1 / -1;
+    font-size: 1.5em;
+    font-family: Valorant;
+    color: white;
+    background-color: #dc3d4b;
+    width:fit-content;
+    position: relative;
+    left: 7em;
+    padding: 1em 3em;
+    outline: none;
+    border: 1px solid white;
+}
+/* FORMS TOP HALF */
+.sub-container .logo {
+    font-family: Valorant;
+    font-size: 6rem;
+    color: white;
+}
+.description-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: 1.75rem;
+    margin: 1.75rem;
+}
+.create-acc {
+    font-family: Valorant;
+    font-size: 2rem;
+    color: #364966;
+}
+.sign-in{
+    font-family: DMSans;
+    font-size: 1rem;
+    color: #364966;
+}
+.sign-in a {
+    text-decoration: none;
+    color: white;
+
 }
