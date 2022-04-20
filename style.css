@@ -60,7 +60,7 @@ body {
 /* FORMS BOTTOM HALF */
 #form-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(40%, 1fr));
     column-gap: 2em;
     row-gap: 1em;
 }
@@ -141,4 +141,21 @@ input:focus {
 }
 .sign-in a:hover {
     color:#dc3d4b;
+}
+
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 2){
+    :root{
+        font-size: 12px;
+    }
+    .main-container{
+        height: 100vh;
+        width: 100vw;
+        border-radius: 0px;
+    }
+    button[type="submit"] {
+        left: 6rem;
+    }
 }
