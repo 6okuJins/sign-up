@@ -1,11 +1,44 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container {
+    background-image: url(Assets/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+
+    height: 70vh;
+    width: 70vw;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex: 0 0 1;
+    justify-content: space-between;
+}
+#jett,
+#jett img {
+    height: 50vh;
+    position: absolute;
+    left: 0px;
+    bottom: 20px;
+}
 .sub-container {
+    z-index: 1;
     height: auto;
-    max-width: 40rem;
+    min-width: 20rem;
     border: 2px solid black;
+    margin: 3rem 2% 3rem 2%;
+    padding: 3rem;
 
     display:flex;
     flex-flow:column nowrap;
     align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 #form-container {
     display: grid;
@@ -17,6 +50,7 @@
     position: absolute;
     font-size: 0.75em;
     padding: 2px;
+    white-space: nowrap;
 }
 .float-container input {
     height: 2.75em;
