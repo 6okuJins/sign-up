@@ -15,7 +15,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: white;
 }
 .main-container {
     background-image: url(Assets/background.jpg);
@@ -100,6 +100,16 @@ button[type="submit"] {
     outline: none;
     border: 1px solid white;
 }
+button[type="submit"]:hover {
+    background-color: #364966;
+    transition: 0.3s ease-out;
+}
+
+input:focus {
+    box-sizing: border-box;
+    box-shadow: inset 0 -10px 0 0px #dc3d4b;
+    transition: box-shadow 0.25s ease-out;
+}
 /* FORMS TOP HALF */
 .sub-container .logo {
     font-family: Valorant;
@@ -128,4 +138,7 @@ button[type="submit"] {
     text-decoration: none;
     color: white;
 
+}
+.sign-in a:hover {
+    color:#dc3d4b;
 }
